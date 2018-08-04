@@ -7,11 +7,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
  <style>
- 
- 
+
+
   #ntext {
       font-family: 'Muli', sans-serif;
       padding-right: 750px;
@@ -31,6 +31,8 @@
 table, th, td {
     border: 1px solid black;
     margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 #table-v1 {
@@ -38,6 +40,9 @@ table, th, td {
  margin-left: 10px;
 }
 
+.right1 {
+  text-align: center;
+}
 
 
 
@@ -48,8 +53,7 @@ table, th, td {
 
 
 
-
- </style>   
+ </style>
 
 
 
@@ -58,229 +62,202 @@ table, th, td {
 </head>
 
 <body>
-    
- <nav class="navbar navbar-light bg-light"> 
+
+ <nav class="navbar navbar-light bg-light">
  <a class="navbar-brand" href="https://preview.c9users.io/gonzalezsoriano777/careerdevs4-hg/Yahoo-Finance-Page/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io#">
     <img src="https://png.icons8.com/ios/1600/hospital-2.png" width="65" height="65" alt="">
-  </a> 
+  </a>
 	<p class="navbar-text" id="ntext">Hector Portfolio/Finance Page</p>
-</nav>	
-    
+</nav>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" style="padding-left: 430px;" href="https://preview.c9users.io/gonzalezsoriano777/careerdevs4-hg/Yahoo-Finance-Page/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io#">HomePage</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" style="padding-left: 430px;" href="#" >Financial Page<span class="sr-only">(current)</span></a>
-     
+
     </ul>
   </div>
 </nav>
+
+
+ <table id="table-v1" style="width:102%;" colspan = "0">
+  <tr>
+    <th  class="right1">Symbol</th>
+    <th  class="right1">Last Price</th>
+    <th  class="right1">Change</th>
+    <th  class="right1">% Chg</th>
+    <th class="right1">Volume</th>
+    <th  class="right1">52 Week Low</th>
+    <th  class="right1">52 Week High</th>
+    <th  class="right1">Market Cap</th>
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>^RUT</b></td>
+    <td><b>1,673.37</b></td>
+    <td style="color:red;"><b>-8.73%</b></td>
+      <td style="color:red;"><b>-0.52%</b></td>
+      <td>0</td>
+      <td style="color:grey;">1,349.35</td>
+      <td style="color:grey;">1,708.56</td>
+      <td><b>-</b></td>
+      
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>CL=F</b></td>
+    <td><b>68.68</b></td>
+    <td style="color:red;"><b>-0.28%</b></td>
+      <td style="color:red;"><b>-0.41%</b></td>
+      <td >459.45k</td>
+      <td style="color: grey;">67.87</td>
+      <td style="color:grey;">69.24</td>
+      <td><b>-</b></td>
+      
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>DVMT</b></td>
+    <td><b>93.09</b></td>
+    <td style="color:green"><b>+0.05</b></td>
+    <td style="color:green;"><b>+0.05%</b></td>
+      <td>1.11M</td>
+      <td style ="color:grey;">62.73</td>
+      <td style="color:grey;">96.15</td>
+      <td>71.48B</td>
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>NKE</b></td>
+    <td><b>78.74</b></td>
+    <td style="color:green;"><b>+0.09</b></td>
+      <td style="color: green;"><b>+0.11%</b></td>
+      <td>3.76M</td>
+      <td style="color:grey;">50.35</td>
+      <td style="color:grey;">81.00</td>
+      <td>126.91B</td>
+   
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>UAA</b></td>
+    <td><b>19.68</b></td>
+    <td style="color:green;"><b>+0.07</b></td>
+      <td style="color:green"><b>+0.365</b></td>
+      <td>5.39M</td>
+      <td style="color:grey;">11.40</td>
+      <td style="color:grey;">24.69</td>
+      <td>8.43B</td>
+      
+  </tr>
+  <tr>
     
+    <td style="color:blue;"><b>GOOG</b></td>
+    <td><b>1,223.71</b></td>
+    <td style="color:red;"><b>-2.44</b></td>
+      <td style="color:red;"><b>-0.20%</b></td>
+      <td>1.09M</td>
+      <td style="color:grey;">903.40</td>
+      <td style="color:grey;">1,273.89</td>
+      <td>852.47B</td>
+      
+  </tr>
+  <tr>
     
- <table id="table-v1" style="width:102%" colspan = "0">
-  <tr>
-    <th>Symbol</th>
-    <th>Last Price</th>
-    <th>Change</th>
-    <th>% Chg</th>
-    <th>52 Week Low</th>
-    <th>52 Week High</th>
-    <th>Market Cap</th>
-  </tr>
-  <tr>
-    <td>^RUT</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <td style="color:blue"><b>MSFT</b></td>
+    <td><b>108.04</b></td>
+    <td style="color:green;"><b>+0.47</b></td>
+      <td style="color:green;"><b>+0.44%</b></td>
+      <td>18.66M</td>
+      <td style="color:grey;">71.28</td>
+      <td style="color:grey;">111.15</td>
+      <td>830.09B</td>
       
   </tr>
   <tr>
-    <td>CL=F</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>DVMT</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>NKE</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>UAA</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>GOOG</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>MSFT</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>^DJI</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>GE</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>TSLA</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>AMZN</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  <tr>
-    <td>AAPL</td>
-    <td></td>
-    <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      
-  </tr>
-  
-</table> 
-
-
-
-
-
-
-
-
-</table>    
     
+    <td style="color:blue;"><b>^DJI</b></td>
+    <td><b>25,462.58</b></td>
+    <td style="color:green;"><b>+136.42</b></td>
+      <td style="color:green"><b>+0.54%</b></td>
+      <td>239.02M</td>
+      <td style="color:grey;">21,600.34</td>
+      <td style="color:grey;">26,616.71</td>
+      <td><b>-</b></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>GE</b></td>
+    <td><b>13.14</b></td>
+    <td style="color:red;"><b>-0.03</b></td>
+      <td style="color:red;"><b>-0.23%</b></td>
+      <td>35.23M</td>
+      <td style="color:grey;">12.61</td>
+      <td style="color:grey;">25.89</td>
+      <td>114.13B</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+  </tr>
+  <tr>
+    <td style="color:blue;"><b>TSLA</b></td>
+    <td><b>348.17</b></td>
+    <td style="color:red"><b>-1.37</b></td>
+      <td style="color:red;"><b>-0.39%</b></td>
+      <td>13.66M</td>
+      <td style="color:grey;">244.59</td>
+      <td style="color:grey;">389.61</td>
+      <td>59.12B</td>
+      
+
+  </tr>
+  <tr>
+    <td style="color:blue"><b>AMZN</b></td>
+    <td><b>1,823.29</b></td>
+    <td style="color:red;"><b>-1.37</b></td>
+      <td style="color:red;"><b>-0.39%</b></td>
+      <td>3.46M</td>
+      <td style="color:grey;">931.75</td>
+      <td style="color:grey;">1,880.05</td>
+      <td>884.71B</td>
     
+
+  </tr>
+  <tr>
+    <td style="color:blue;">AAPL</td>
+    <td><b>207.99</b></td>
+    <td style="color:green;"><b></b>+0.60</td>
+      <td style="color: green;"><b></b>+0.29%</td>
+      <td>33.45M</td>
+      <td style="color:green;">149.16</td>
+      <td style="color:green;">208.74</td>
+      <td>1.00T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+  </tr>
+
+</table>
+
+
+
+
+
+
+
+
+</table>
+
+
 
 
 
