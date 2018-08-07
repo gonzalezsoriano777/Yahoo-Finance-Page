@@ -13,7 +13,12 @@
 
 <style>
     
- 
+ #img-run{
+   width: 55%;
+   height:230px;
+   display:block;
+   margin-left:320px;
+ }
     
     
   #ntext {
@@ -23,14 +28,15 @@
       color: black;
   }
 
+#ntext:hover {
+  color: pink;
+}
 
  .nav-link{
    font-size: 22px;
  }
 
-.yeah.hover {
-  color
-}
+
  .nav-brand{
    font-size: 22px;
  }
@@ -40,6 +46,32 @@
   width: 350px;
  height:300px;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 30%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+
 
 
 
@@ -51,7 +83,7 @@
     <a class="navbar-brand" href="https://preview.c9users.io/gonzalezsoriano777/careerdevs4-hg/Yahoo-Finance-Page/index.html?_c9_id=livepreview0&_c9_host=https://ide.c9.io#">
     <img src="https://png.icons8.com/ios/1600/hospital-2.png" width="65" height="65" alt="">
   </a> 
-	<p class="navbar-text" id="ntext" class="yeah"><u>Hector Portfolio/Finance Page</u></p>
+	<p class="navbar-text" id="ntext" ><u>Hector Portfolio/Finance Page</u></p>
 </nav>	
     
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#81ecec">
@@ -73,19 +105,19 @@
 <div id="carouselExampleControls" style="margin-top:5px;" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" id="carousel-inner-img" src="https://res.cloudinary.com/teepublic/image/private/s--H5S20WLv--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1508294157/production/designs/1980312_1.jpg"  alt="First slide">
+      <img class="d-block w-95" id="img-run"  src="https://res.cloudinary.com/teepublic/image/private/s--lc6HQ7vn--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1483104947/production/designs/1006816_1.jpg"  alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100"  id="carousel-inner-img" src="http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png" alt="Second slide">
+      <img class="d-block w-95" id="img-run"  src="http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100"  id="carousel-inner-img" src="https://c1.staticflickr.com/3/2448/3786118534_eafa148921_b.jpg"  alt="Third slide">
+      <img class="d-block w-95" id="img-run"    src="https://c1.staticflickr.com/3/2448/3786118534_eafa148921_b.jpg"  alt="Third slide">
     </div>
      <div class="carousel-item">
-      <img class="d-block w-100"  id="carousel-inner-img" src="https://www.technobuffalo.com/wp-content/uploads/2013/07/Microsoft-Logo-2012-Logo-and-Type.jpg"  alt="Fourth">
+      <img class="d-block w-95" id="img-run"   src="https://www.technobuffalo.com/wp-content/uploads/2013/07/Microsoft-Logo-2012-Logo-and-Type.jpg"  alt="Fourth">
     </div>
      <div class="carousel-item">
-      <img class="d-block w-100"  id="carousel-inner-img" src="http://joinville.se/wp-content/uploads/2015/11/googlelogo.jpg"  alt="Fifth">
+      <img class="d-block w-95" id="img-run"   src="http://joinville.se/wp-content/uploads/2015/11/googlelogo.jpg"  alt="Fifth">
     </div>
   </div>
   
@@ -93,7 +125,7 @@
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleControls"  role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -101,8 +133,9 @@
 
 
 <div class="card" style="margin-top: 5px; margin-left: 20px;">
-  <div class="card-body" style="font-family: 'Gaegu', cursive;  padding-right: 200px; font-size: 30px; text-align: center;">
-    Stock's Of Every Sort!
+  <div class="card-body"style="font-family: 'Gaegu', cursive;  padding-right: 200px; font-size: 30px; text-align: center;">
+    Stock's Of Every Sort!<br>
+    Major Stocks As Well!
   </div>
 </div>
 
