@@ -11,6 +11,16 @@
 
  <style>
 
+#img-run{
+   width: 55%;
+   height:230px;
+   display:block;
+   margin-left:320px;
+ }
+
+
+
+
 
   #ntext {
       font-family: 'Muli', sans-serif;
@@ -18,6 +28,11 @@
       font-size: 20px;
       color: black;
   }
+
+#ntext:hover {
+  color: pink;
+}
+
 
  .nav-link{
    font-size: 22px;
@@ -44,7 +59,9 @@ table, th, td {
   text-align: center;
 }
 
-
+table tr th {
+  width: 25%;
+}
 
 
 
@@ -84,21 +101,28 @@ table, th, td {
 	<input class="form-control mr-sm-2" type="search" placeholder="Search"aria-label="Search">
 	<button class="btn btn-outline-success my-2 my-sm-0" style="color:white;" type="Submit">Search</button>
 </form>
+  </nav>
+ 
+ <img src="https://www.ziyen.com/wp-content/uploads/2016/03/yahoo_finance_share.png" width="99%" height="250px" style="margin-left:11px;margin-top:3px;">
+ 
   
-</nav>
 
 
- <table id="table-v1" style="width:99%;" colspan = "0">
+
+ <table id="table-v1" style="width:99%;margin-top:5px;" colspan = "0">
+   <thead>
   <tr>
-    <th  class="right1">Symbol</th>
-    <th  class="right1">Last Price</th>
-    <th  class="right1">Change</th>
-    <th  class="right1">% Chg</th>
-    <th class="right1">Volume</th>
-    <th  class="right1">52 Week Low</th>
-    <th  class="right1">52 Week High</th>
-    <th  class="right1">Market Cap</th>
+    <th  class="col-md-3">Symbol</th>
+    <th  class="col-md-3">Last Price</th>
+    <th  class="col-md-3">Change</th>
+    <th  class="col-md-3">% Chg</th>
+    <th class="col-md-3">Volume</th>
+    <th  class="col-md-3">52 Week Low</th>
+    <th  class="col-md-3">52 Week High</th>
+    <th class="col-md-3">Market Cap</th>
   </tr>
+  </thead>
+  <tbody>
   <tr>
     <td style="color:blue;"><b>^RUT</b></td>
     <td><b>1,673.37</b></td>
@@ -241,7 +265,7 @@ table, th, td {
       <td>1.00T</td>
       
   </tr>
-
+</tbody>
 </table>
 
 
@@ -251,7 +275,6 @@ table, th, td {
 
 
 
-</table>
 
 
 
